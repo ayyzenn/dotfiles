@@ -1,0 +1,46 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+
+[greetings]
+color=#f5af19
+command=echo "Hello, $USER! 🐧"
+interval=once
+
+[weather]
+# label=☁️
+command=curl -s 'wttr.in/Peshawar?format=1'
+interval=1800
+
+[time]
+# command=date '+%a, %b %d, %Y %I:%M:%S %p'
+command=date '+%a, %b %d %I:%M:%S %p'
+interval=1
+
+[battery]
+command=acpi -b | awk -F '[, ]+' '{print $3 " " $4}'
+interval=10
+# interval=30
+
+#[volume]
+#label=🔊 
+#command=amixer get Master | awk -F'[][]' '/Left:/ { print $2; exit }'
+#interval=1
+
+[volume]
+label=🔊
+command=amixer get Master | awk -F'[][]' '/%/ { print $2; exit }'
+interval=1
+
+#[network]
+#label=🌐 
+#command=ip route get 1.1.1.1 | awk '{print $7}' || echo "Disconnected"
+#interval=10
