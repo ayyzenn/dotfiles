@@ -30,14 +30,14 @@ command=acpi -b | awk -F '[, ]+' '{print $3 " " $4}'
 interval=10
 # interval=30
 
-#[volume]
-#label=🔊 
-#command=amixer get Master | awk -F'[][]' '/Left:/ { print $2; exit }'
-#interval=1
+# [volume]
+# label=🔊
+# command=amixer get Master | awk -F'[][]' '/%/ { print $2; exit }'
+# interval=1
 
 [volume]
-label=🔊
-command=amixer get Master | awk -F'[][]' '/%/ { print $2; exit }'
+label=
+command=~/.config/i3blocks/volume.sh
 interval=1
 
 #[network]
