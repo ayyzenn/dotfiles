@@ -229,7 +229,7 @@ bindsym $mod+c exec gnome-calculator
 exec --no-startup-id dunst
 
 # Pulsemixer
-bindsym $mod+F4 exec wezterm -e pulsemixer
+bindsym $mod+F4 exec alacritty -e pulsemixer
 
 # Wallpaper restore
 exec --no-startup-id nitrogen --restore
@@ -247,12 +247,12 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id ~/.config/bat/bat.sh
 
 # Set default gaps
-gaps inner 5
-gaps outer 3
+gaps inner 6
+gaps outer 2
 
 # Smart settings (optional)
-smart_gaps on
-smart_borders on
+# smart_gaps on
+# smart_borders on
 
 # Optional: Change gaps dynamically with keybinds
 bindsym $mod+Shift+plus gaps inner all plus 5
@@ -263,5 +263,3 @@ bindsym $mod+Shift+o gaps outer all plus 5
 
 # Decrease outer gaps
 bindsym $mod+Shift+p gaps outer all minus 5
-
-
