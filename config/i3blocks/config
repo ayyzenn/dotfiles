@@ -25,7 +25,6 @@ interval=1
 
 [battery]
 command=acpi -b | awk -F '[, ]+' '{ if ($3 == "Charging") { print "🔌 " $4 } else { print $4 }}'
-
 interval=3
 
 [volume]
