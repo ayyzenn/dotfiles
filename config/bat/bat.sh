@@ -18,7 +18,9 @@ while true; do
         ALERTED_FULL=false  # Reset full alert when discharging
 
         if [[ "$BATTERY_LEVEL" -le $DANGER_BATTERY ]]; then
-            notify-send -u critical "Battery Critically Low!" "Battery at $BATTERY_LEVEL%. System will shut down soon!" -t 5000
+            notify-send -u critical "Battery Critically Low!" "Battery at $BATTERY_LEVEL%. System will suspend now!" -t 5000
+            sleep 5
+            systemctl suspend
         elif [[ "$BATTERY_LEVEL" -le $CRITICAL_BATTERY ]]; then
             notify-send -u critical "Battery Low" "Battery at $BATTERY_LEVEL%. Plug in your charger!" -t 5000
         elif [[ "$BATTERY_LEVEL" -le $LOW_BATTERY ]]; then
