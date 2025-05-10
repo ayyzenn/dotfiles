@@ -1,3 +1,10 @@
+[general]
+import = [
+  #"~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"
+  "~/.config/alacritty/themes/themes/dracula.toml"
+  #"~/.config/alacritty/themes/themes/dracula_plus.toml"
+]
+
 [window]
 opacity = 0.5
 decorations = "full"
@@ -25,40 +32,7 @@ style = "Italic"
 [cursor]
 style = { shape = "Block", blinking = "On" }
 blink_interval = 500
-thickness = 0.7  # Alacritty uses 0.0–1.0 range, so 4.0/10 ~= 0.4
-
-[colors.primary]
-background = "#2D2A2E"   # Monokai Pro background
-foreground = "#FCFCFA"   # Main text color
-
-#[colors.cursor]
-#text = "#2D2A2E"
-#cursor = "#FC9867"
-
-[colors.cursor]
-text = "#1a1a1a"
-cursor = "#00ffcc"
-
-[colors.normal]
-black   = "#2D2A2E"
-red     = "#FF6188"  # Coral Pink
-green   = "#A9DC76"  # Soft Green
-yellow  = "#FFD866"  # Cream Yellow
-blue    = "#78DCE8"  # Light Cyan Blue
-magenta = "#AB9DF2"  # Soft Purple
-cyan    = "#78DCE8"  # Reuse blue for consistency
-white   = "#FCFCFA"
-
-[colors.bright]
-black   = "#727072"
-red     = "#FF6188"
-green   = "#A9DC76"
-yellow  = "#FFD866"
-blue    = "#78DCE8"
-magenta = "#AB9DF2"
-cyan    = "#78DCE8"
-white   = "#FFFFFF"
-
+thickness = 0.7
 
 [selection]
 save_to_clipboard = true

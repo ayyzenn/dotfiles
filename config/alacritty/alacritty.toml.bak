@@ -28,32 +28,37 @@ blink_interval = 500
 thickness = 0.7  # Alacritty uses 0.0–1.0 range, so 4.0/10 ~= 0.4
 
 [colors.primary]
-background = "#272822"
-foreground = "#f8f8f2"
+background = "#2D2A2E"   # Monokai Pro background
+foreground = "#FCFCFA"   # Main text color
+
+#[colors.cursor]
+#text = "#2D2A2E"
+#cursor = "#FC9867"
 
 [colors.cursor]
 text = "#1a1a1a"
 cursor = "#00ffcc"
 
 [colors.normal]
-black   = "#272822"
-red     = "#f92672"
-green   = "#a6e22e"
-yellow  = "#f4bf75"
-blue    = "#66d9ef"
-magenta = "#ae81ff"
-cyan    = "#38ccaa"
-white   = "#f8f8f2"
+black   = "#2D2A2E"
+red     = "#FF6188"  # Coral Pink
+green   = "#A9DC76"  # Soft Green
+yellow  = "#FFD866"  # Cream Yellow
+blue    = "#78DCE8"  # Light Cyan Blue
+magenta = "#AB9DF2"  # Soft Purple
+cyan    = "#78DCE8"  # Reuse blue for consistency
+white   = "#FCFCFA"
 
 [colors.bright]
-black   = "#75715e"
-red     = "#f92672"
-green   = "#a6e22e"
-yellow  = "#f4bf75"
-blue    = "#66d9ef"
-magenta = "#ae81ff"
-cyan    = "#38ccaa"
-white   = "#f9f8f5"
+black   = "#727072"
+red     = "#FF6188"
+green   = "#A9DC76"
+yellow  = "#FFD866"
+blue    = "#78DCE8"
+magenta = "#AB9DF2"
+cyan    = "#78DCE8"
+white   = "#FFFFFF"
+
 
 [selection]
 save_to_clipboard = true

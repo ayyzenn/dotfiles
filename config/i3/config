@@ -201,8 +201,8 @@ bar {
         # font pango:DejaVu Sans Mono 9.5
 }
 
-# Full screen screenshot
-bindsym Shift+Print exec scrot ~/Pictures/screenshot_%Y-%m-%d-%H%M%S.png
+# Active Window screenshot
+bindsym Shift+Print exec scrot -u ~/Pictures/screenshot_%Y-%m-%d-%H%M%S.png
 
 # Select area and take a screenshot
 bindsym Print exec scrot -s ~/Pictures/screenshot_%Y-%m-%d-%H%M%S.png
@@ -249,19 +249,19 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id ~/.config/bat/bat.sh
 
 # Set default gaps
-gaps inner 6
-gaps outer 2
+gaps inner 4
+gaps outer 1
 
 # Smart settings (optional)
 # smart_gaps on
 # smart_borders on
 
 # Optional: Change gaps dynamically with keybinds
-bindsym $mod+Shift+plus gaps inner all plus 5
-bindsym $mod+Shift+minus gaps inner all minus 5
+bindsym $mod+Shift+plus gaps inner all plus 4
+bindsym $mod+Shift+minus gaps inner all minus 4
 
 # Increase outer gaps
-bindsym $mod+Shift+o gaps outer all plus 5
+bindsym $mod+Shift+o gaps outer all plus 4
 
 # Decrease outer gaps
-bindsym $mod+Shift+p gaps outer all minus 5
+bindsym $mod+Shift+p gaps outer all minus 4
