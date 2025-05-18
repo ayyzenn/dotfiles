@@ -38,6 +38,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --blur 20 --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+
+# Starting the picom on the startup
+exec --no-startup-id picom
+
+
+
 # Use pactl to adjust volume in PulseAudio. (commented out)
 set $refresh_i3status killall -SIGUSR1 i3status
 #bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -255,20 +261,22 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 # Battery notification
 exec --no-startup-id ~/.config/bat/bat.sh
 
+############################################################################
 # Set default gaps
-gaps inner 4
-gaps outer 1
+# gaps inner 4
+# gaps outer 1
 
 # Smart settings (optional)
 # smart_gaps on
 # smart_borders on
 
 # Optional: Change gaps dynamically with keybinds
-bindsym $mod+Shift+plus gaps inner all plus 4
-bindsym $mod+Shift+minus gaps inner all minus 4
+# bindsym $mod+Shift+plus gaps inner all plus 4
+# bindsym $mod+Shift+minus gaps inner all minus 4
 
 # Increase outer gaps
-bindsym $mod+Shift+o gaps outer all plus 4
+# bindsym $mod+Shift+o gaps outer all plus 4
 
 # Decrease outer gaps
-bindsym $mod+Shift+p gaps outer all minus 4
+# bindsym $mod+Shift+p gaps outer all minus 4
+############################################################################
