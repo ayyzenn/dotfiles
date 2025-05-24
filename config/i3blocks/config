@@ -15,22 +15,27 @@ color=#f5af19
 command=echo "Hello, $USER! 🐧"
 interval=once
 
-[weather]
-command=curl -s 'wttr.in/Peshawar?format=1'
-interval=1800
+# [weather]
+# command=curl -s 'wttr.in/Peshawar?format=1'
+# interval=1800
 
 [time]
 command=date '+%a, %b %d %I:%M:%S %p'
 interval=1
 
 [battery]
-command=acpi -b | awk -F '[, ]+' '{ if ($3 == "Charging") { print "🔌 " $4 } else { print $4 }}'
+command=$HOME/.config/i3blocks/battery_status.sh
 interval=3
 
 [volume]
 label=
 command=~/.config/i3blocks/volume.sh
 interval=1
+
+[bluetooth]
+command=~/.config/i3blocks/bluetooth.sh
+interval=10
+label=
 
 #[network]
 #label=🌐 
