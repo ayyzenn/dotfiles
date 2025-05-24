@@ -15,6 +15,7 @@ ln -sf $DOTDIR/ranger ~/.config/ranger
 ln -sf $DOTDIR/i3blocks ~/.config/i3blocks
 ln -sf $DOTDIR/bat ~/.config/bat
 ln -sf $DOTDIR/alacritty ~/.config/alacritty
+ln -sf $DOTDIR/st ~/.config/st
 
 echo "✅ All symlinks created successfully!"
 

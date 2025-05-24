@@ -34,7 +34,7 @@ interval=1
 
 [bluetooth]
 command=~/.config/i3blocks/bluetooth.sh
-interval=10
+interval=3
 label=
 
 #[network]
