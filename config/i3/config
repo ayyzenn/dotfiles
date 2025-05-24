@@ -248,7 +248,8 @@ bindsym $mod+c exec gnome-calculator
 exec --no-startup-id dunst
 
 # Pulsemixer
-bindsym $mod+F4 exec alacritty -e pulsemixer
+#bindsym $mod+F4 exec alacritty -e pulsemixer
+bindsym $mod+F4 exec st -e pulsemixer
 
 # Wallpaper restore
 exec --no-startup-id nitrogen --restore

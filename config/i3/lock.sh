@@ -30,6 +30,6 @@ i3lock \
   --date-str="%a, %b %d" \
   --greeter-text="$greeter_text" \
   --greeter-color=ffffffff \
-  --greeter-font="Iosevka Nerd Font" \
+  --greeter-font="Liberation Mono" \
   --greeter-pos="ix:iy+150"
 
