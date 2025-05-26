@@ -56,16 +56,14 @@ tiling_drag modifier titlebar
 
 # start a terminal
 # bindsym $mod+Return exec wezterm
-# bindsym $mod+Return exec alacritty
-bindsym $mod+Return exec st
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # lunching the ranger
 #bindsym $mod+F3 exec wezterm -e ranger
-#bindsym $mod+F3 exec alacritty -e ranger
-bindsym $mod+F3 exec st -e ranger
+bindsym $mod+F3 exec alacritty -e ranger
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
@@ -242,8 +240,7 @@ bindsym $mod+c exec gnome-calculator
 exec --no-startup-id dunst
 
 # Pulsemixer
-#bindsym $mod+F4 exec alacritty -e pulsemixer
-bindsym $mod+F4 exec st -e pulsemixer
+bindsym $mod+F4 exec alacritty -e pulsemixer
 
 # Wallpaper restore
 exec --no-startup-id nitrogen --restore

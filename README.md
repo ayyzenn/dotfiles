@@ -20,7 +20,6 @@ This repo includes configs for:
 - `gtk-2.0` / `gtk-3.0` – GTK themes
 - `bat` – `cat` clone with syntax highlighting
 - `alacritty` – GPU-accelerated terminal emulator (alternative to wezterm)
-- `st` – simple terminal emulator (suckless)
 ---
 
 ## 🚀 Installation
