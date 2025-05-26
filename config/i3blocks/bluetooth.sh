@@ -34,4 +34,4 @@ if echo "$info" | grep -q "Connected: yes"; then
 fi
 
 #echo " "
-
+echo "🛜"
