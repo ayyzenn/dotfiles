@@ -9,7 +9,7 @@ PERCENT=$(echo "$INFO" | grep -oP '[0-9]+(?=%)')
 if [[ "$STATUS" == "Charging" ]]; then
     ICON="🔌"
 else
-    if (( PERCENT < 15 )); then
+    if (( PERCENT <= 15 )); then
         ICON="🪫"
     else
         ICON="🔋"
