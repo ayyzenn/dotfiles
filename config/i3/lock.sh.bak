@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Disable screen blanking and power management temporarily
-xset s off
-xset -dpms
-
 # Get battery percentage
 battery=$(cat /sys/class/power_supply/BAT*/capacity)
+
+# greeter_text="Endless Night'\n' ${battery}%"
 greeter_text="Endless Night | ${battery}%"
 
 # Launch i3lock
@@ -34,8 +32,4 @@ i3lock \
   --greeter-color=ffffffff \
   --greeter-font="Liberation Mono" \
   --greeter-pos="ix:iy+150"
-
-# Re-enable screen blanking and DPMS after unlocking
-xset s on
-xset +dpms
 
