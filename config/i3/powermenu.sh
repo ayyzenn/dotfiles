@@ -9,9 +9,6 @@ confirm() {
 }
 
 case "$chosen" in
-    Lock)
-        ~/.config/i3/lock.sh
-        ;;
     Shutdown)
         response=$(confirm "Shutdown")
         [[ "$response" == "Yes" ]] && systemctl poweroff
