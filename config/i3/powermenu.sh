@@ -21,8 +21,7 @@ case "$chosen" in
         [[ "$response" == "Yes" ]] && systemctl reboot
         ;;
     Suspend)
-        response=$(confirm "Suspend")
-        [[ "$response" == "Yes" ]] && systemctl suspend
+        systemctl suspend
         ;;
     *)
         exit 1
