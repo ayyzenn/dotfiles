@@ -35,7 +35,7 @@ i3lock \
   --greeter-font="Liberation Mono" \
   --greeter-pos="ix:iy+150"
 
-# Re-enable screen blanking and DPMS after unlocking
-xset s on
-xset +dpms
+# Keep DPMS disabled after unlocking (don't re-enable screen blanking)
+# xset s on
+# xset +dpms
 
