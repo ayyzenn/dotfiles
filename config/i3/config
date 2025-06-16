@@ -31,8 +31,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --blur 20 --nofork
-exec --no-startup-id xss-lock --transfer-sleep-lock -- ~/.config/i3/lock.sh
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --blur 20 --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -42,7 +41,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom
 
 # Auto-lock after 5 minutes but keep screen visible (disable DPMS)
-exec --no-startup-id xset s 300 300
+# exec --no-startup-id xset s 300 300
 exec --no-startup-id xset -dpms
 
 # Use pactl to adjust volume in PulseAudio. (commented out)

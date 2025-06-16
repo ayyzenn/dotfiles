@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Main options
-options="Lock\nShutdown\nReboot\nSuspend"
+options="Shutdown\nReboot\nSuspend"
 chosen=$(echo -e "$options" | dmenu -i -p "Power Menu:")
 
 confirm() {
