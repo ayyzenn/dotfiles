@@ -13,23 +13,19 @@ y = 5
 size = 7
 
 [font.normal]
-# family = "monospace"
-family = "Terminus"
+family = "monospace"
 style = "Regular"
 
 [font.bold]
-#family = "monospace"
-family = "Terminus"
+family = "monospace"
 style = "Bold"
 
 [font.italic]
-#family = "monospace"
-family = "Terminus"
+family = "monospace"
 style = "Italic"
 
 [font.bold_italic]
-#family = "monospace"
-family = "Terminus"
+family = "monospace"
 style = "Bold Italic"
 
 [cursor]
