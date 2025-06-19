@@ -1,8 +1,4 @@
 [general]
-#import = [
-  #"~/.config/alacritty/themes/themes/base16_default_dark.toml"
-#  "~/.config/alacritty/themes/themes/gruvbox_dark.toml"
-#]
 
 [window]
 opacity = 0.75
@@ -17,19 +13,23 @@ y = 5
 size = 7
 
 [font.normal]
-family = "monospace"
+# family = "monospace"
+family = "Terminus"
 style = "Regular"
 
 [font.bold]
-family = "monospace"
+#family = "monospace"
+family = "Terminus"
 style = "Bold"
 
 [font.italic]
-family = "monospace"
+#family = "monospace"
+family = "Terminus"
 style = "Italic"
 
 [font.bold_italic]
-family = "monospace"
+#family = "monospace"
+family = "Terminus"
 style = "Bold Italic"
 
 [cursor]
@@ -70,4 +70,3 @@ blue    = "#7aa6da"
 magenta = "#c397d8"
 cyan    = "#70c0ba"
 white   = "#eaeaea"
-

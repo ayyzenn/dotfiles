@@ -1,5 +1,7 @@
+[general]
+
 [window]
-opacity = 0.5
+opacity = 0.75
 decorations = "full"
 startup_mode = "Windowed"
 
@@ -8,57 +10,32 @@ x = 5
 y = 5
 
 [font]
-size = 9.0
+size = 7
 
 [font.normal]
-family = "DejaVu Sans Mono"
+# family = "monospace"
+family = "Terminus"
 style = "Regular"
 
 [font.bold]
-family = "DejaVu Sans Mono"
+#family = "monospace"
+family = "Terminus"
 style = "Bold"
 
 [font.italic]
-family = "DejaVu Sans Mono"
+#family = "monospace"
+family = "Terminus"
 style = "Italic"
+
+[font.bold_italic]
+#family = "monospace"
+family = "Terminus"
+style = "Bold Italic"
 
 [cursor]
 style = { shape = "Block", blinking = "On" }
 blink_interval = 500
-thickness = 0.7  # Alacritty uses 0.0–1.0 range, so 4.0/10 ~= 0.4
-
-[colors.primary]
-background = "#2D2A2E"   # Monokai Pro background
-foreground = "#FCFCFA"   # Main text color
-
-#[colors.cursor]
-#text = "#2D2A2E"
-#cursor = "#FC9867"
-
-[colors.cursor]
-text = "#1a1a1a"
-cursor = "#00ffcc"
-
-[colors.normal]
-black   = "#2D2A2E"
-red     = "#FF6188"  # Coral Pink
-green   = "#A9DC76"  # Soft Green
-yellow  = "#FFD866"  # Cream Yellow
-blue    = "#78DCE8"  # Light Cyan Blue
-magenta = "#AB9DF2"  # Soft Purple
-cyan    = "#78DCE8"  # Reuse blue for consistency
-white   = "#FCFCFA"
-
-[colors.bright]
-black   = "#727072"
-red     = "#FF6188"
-green   = "#A9DC76"
-yellow  = "#FFD866"
-blue    = "#78DCE8"
-magenta = "#AB9DF2"
-cyan    = "#78DCE8"
-white   = "#FFFFFF"
-
+thickness = 0.7
 
 [selection]
 save_to_clipboard = true
@@ -66,3 +43,30 @@ save_to_clipboard = true
 [terminal.shell]
 program = "/bin/bash"
 
+[colors.primary]
+background = "#080808"
+foreground = "#dcdccc"
+
+[colors.cursor]
+text = "#0f1011"
+cursor = "#dcdccc"
+
+[colors.normal]
+black   = "#1d1f21"
+red     = "#cc6666"
+green   = "#b5bd68"
+yellow  = "#f0c674"
+blue    = "#81a2be"
+magenta = "#b294bb"
+cyan    = "#8abeb7"
+white   = "#c5c8c6"
+
+[colors.bright]
+black   = "#666666"
+red     = "#d54e53"
+green   = "#b9ca4a"
+yellow  = "#e7c547"
+blue    = "#7aa6da"
+magenta = "#c397d8"
+cyan    = "#70c0ba"
+white   = "#eaeaea"
