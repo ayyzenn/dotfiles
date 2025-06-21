@@ -40,6 +40,9 @@ exec --no-startup-id nm-applet
 # Starting the picom on the startup
 exec --no-startup-id picom
 
+# Enable Num Lock on startup
+exec --no-startup-id numlockx on
+
 # Auto-lock after 5 minutes but keep screen visible (disable DPMS)
 # exec --no-startup-id xset s 300 300
 exec --no-startup-id xset -dpms
