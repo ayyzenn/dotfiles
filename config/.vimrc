@@ -206,6 +206,12 @@ command! Files FZF
 command! -nargs=* Search Rg <args>
 
 " ========================================
+" Key Mappings
+" ========================================
+" Toggle NERDTree with Ctrl+B
+nnoremap <C-b> :NERDTreeToggle<CR>
+
+" ========================================
 " Auto Commands
 " ========================================
 " Remove trailing whitespace on save
