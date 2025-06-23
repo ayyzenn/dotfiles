@@ -36,6 +36,7 @@ echo "✅ Linked vim configs"
 [[ -e ~/.config/i3blocks ]] && rm -rf ~/.config/i3blocks
 [[ -e ~/.config/bat ]] && rm -rf ~/.config/bat
 [[ -e ~/.config/alacritty ]] && rm -rf ~/.config/alacritty
+[[ -e ~/.config/fastfetch ]] && rm -rf ~/.config/fastfetch
 
 ln -sf $DOTDIR/i3 ~/.config/i3
 ln -sf $DOTDIR/picom ~/.config/picom
@@ -48,6 +49,7 @@ ln -sf $DOTDIR/ranger ~/.config/ranger
 ln -sf $DOTDIR/i3blocks ~/.config/i3blocks
 ln -sf $DOTDIR/bat ~/.config/bat
 ln -sf $DOTDIR/alacritty ~/.config/alacritty
+ln -sf $DOTDIR/fastfetch ~/.config/fastfetch
 
 echo "✅ All configs linked successfully!"
 
