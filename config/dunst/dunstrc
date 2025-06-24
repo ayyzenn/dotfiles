@@ -444,6 +444,11 @@
 #    msg_urgency = critical
 #    fullscreen = show
 
+# Play notification sounds for all notifications
+[play_sound]
+    summary = "*"
+    script = ~/.config/dunst/notification_sound.sh
+
 #[espeak]
 #    summary = "*"
 #    script = dunst_espeak.sh
