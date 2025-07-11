@@ -1,0 +1,49 @@
+
+
+
+[memory]
+label=🧠 
+command=free -h | awk '/^Mem/ {print $3"/"$2}'
+interval=5
+color=#8E44AD
+
+[disk]
+label=💾 
+command=df -h / | awk 'NR==2{printf "%s/%s (%s)", $3, $2, $5}'
+interval=30
+color=#E67E22
+
+[load]
+label=⚡ 
+command=uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3" "$4" "$5 }' | sed 's/,//g'
+interval=5
+color=#16A085
+
+[network]
+label=📶 
+command=ip route get 1.1.1.1 2>/dev/null | awk '{print $7}' || echo "❌ Disconnected"
+interval=10
+color=#3498DB
+
+[volume]
+label=🔊 
+command=~/.config/i3blocks/volume.sh
+interval=1
+signal=10
+color=#2ECC71
+
+[bluetooth]
+command=~/.config/i3blocks/bluetooth.sh
+interval=3
+label=🔵 
+color=#9B59B6
+
+[battery]
+command=$HOME/.config/i3blocks/battery_status.sh
+interval=3
+color=#E74C3C
+
+[time]
+command=date '+%I:%M:%S %p %a, %b %d'
+interval=1
+color=#F8C471
